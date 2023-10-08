@@ -1,0 +1,15 @@
+
+body {
+    background: $color-white-background;
+    color: $color-black-content;
+    font-family: 'Raleway', sans-serif;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+a{
+    transition: color 0.2s ease;
+}
