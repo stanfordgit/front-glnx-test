@@ -1,1 +1,58 @@
-body{display:flex;align-items:center;flex-direction:column;align-items:center;gap:20px}body .flag{width:300px;background-color:#fff;border:1px solid #000}body .flag.ukraine{height:200px;background:linear-gradient(to bottom, #0057b8 0%, #0057b8 50%, #ffd700 50%, #ffd700 100%)}body .flag.japan{height:200px;background-color:#fff;display:flex;align-items:center;justify-content:center}body .flag.japan::before{content:"";width:120px;height:120px;border-radius:50%;background-color:#bc002d}body .flag.iceland{height:216px;background:linear-gradient(#02529c, #02529c) 0 0/84px 84px,linear-gradient(#02529c, #02529c) 0 100%/84px 84px,linear-gradient(#02529c, #02529c) 100% 0/168px 84px,linear-gradient(#02529c, #02529c) 100% 100%/168px 84px,linear-gradient(#dc1e35, #dc1e35) 96px 0/24px 100%,linear-gradient(#dc1e35, #dc1e35) 0 50%/100% 24px;background-repeat:no-repeat}body .flag.czech{height:200px;background:linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #D7141A 50%, #D7141A 100%);position:relative}body .flag.czech::before{content:"";position:absolute;height:0;width:0;top:0;left:0;border-left:150px solid #11457e;border-top:100px solid rgba(0,0,0,0);border-bottom:100px solid rgba(0,0,0,0)}/*# sourceMappingURL=style.css.map */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body .flag {
+  width: 300px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 8px 10px 29px -12px rgb(148, 148, 148);
+  -moz-box-shadow: 8px 10px 29px -12px rgb(148, 148, 148);
+  box-shadow: 8px 10px 29px -12px rgb(148, 148, 148);
+}
+body .flag.ukraine {
+  height: 200px;
+  background: linear-gradient(to bottom, #0057b8 0%, #0057b8 50%, #ffd700 50%, #ffd700 100%);
+}
+body .flag.japan {
+  height: 200px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .flag.japan::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #bc002d;
+}
+body .flag.iceland {
+  height: 216px;
+  background: linear-gradient(#02529c, #02529c) 0 0/84px 84px, linear-gradient(#02529c, #02529c) 0 100%/84px 84px, linear-gradient(#02529c, #02529c) 100% 0/168px 84px, linear-gradient(#02529c, #02529c) 100% 100%/168px 84px, linear-gradient(#dc1e35, #dc1e35) 96px 0/24px 100%, linear-gradient(#dc1e35, #dc1e35) 0 50%/100% 24px;
+  background-repeat: no-repeat;
+}
+body .flag.czech {
+  height: 200px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #D7141A 50%, #D7141A 100%);
+  position: relative;
+}
+body .flag.czech::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  border-left: 150px solid #11457E;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
