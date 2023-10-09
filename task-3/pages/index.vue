@@ -4,7 +4,7 @@
     <form class="form" @submit.prevent="searchCountry()">
       <input type="text" class="countryInput" v-model="countryInput" placeholder="Enter name country">
       <button type="submit" class="searchButton">Search</button>
-      <button class="resetButton" @click.prevent="resetForm()">Reset</button>
+      <button class="resetButton" @click="resetForm()">Reset</button>
     </form>
 
       <div class="universityTable">
@@ -22,7 +22,7 @@
           <tr v-for="(university, index) in universities" :key="university.name">
             <td>{{ index + 1 }}</td>
             <td>{{ university.name }}</td>
-            <td><a :href="university.web_pages[0]">{{ university.web_pages[0] }}</a></td>
+            <td><a :href="university.web_pages[0]" target="_blank">{{ university.web_pages[0] }}</a></td>
             <td>{{ university.country }}</td>
             <td>
               <input type="checkbox" 
@@ -42,7 +42,9 @@
   const markedUniversities = ref([])
   const universities = ref([]);
   onMounted(()=>{
-    loadMarkedUniversitiesData();
+    if (localStorage.getItem("markedUniversitiesData")){
+      loadMarkedUniversitiesData();
+    }
   })
   watch(markedUniversities, (newVal, oldVal) => {
     updateMarkedUniversitiesData()
