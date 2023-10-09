@@ -144,7 +144,7 @@
         display: flex;
         flex-direction: column;
         .image-item{
-          transition: transform 0.3s ease;
+          transition: transform 0.3s ease, border-color 0.3s ease;;
           &:hover{
             cursor: pointer;
             @media (min-width: 901px) {

@@ -24,7 +24,7 @@
     height: 100%;
     border: 5px solid $color-border-grey;
     border-radius: 10px;
-    transition: border-color 0.3s ease;
+
     overflow: hidden;
     img{
       height: 100%;
