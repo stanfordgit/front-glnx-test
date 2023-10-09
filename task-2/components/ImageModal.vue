@@ -29,7 +29,6 @@
     display: flex;
     position: fixed;
     z-index: 100; 
-    padding-top: 100px; 
     left: 0;
     top: 0;
     width: 100%; 
