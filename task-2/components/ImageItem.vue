@@ -1,9 +1,6 @@
 <template>
   <div class="image-item">
-    <img
-      :src="src"
-      :alt="alt"
-    />
+    <img :src="src" :alt="alt"/>
   </div>
 
 </template>
@@ -41,5 +38,6 @@
         }
       }
     }
+
   }
 </style>
